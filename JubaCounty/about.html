@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Juba County</title>
+    <style>
+        /* ================= GLOBAL STYLES ================= */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        :root { --primary-green: #1e7a44; --primary-brown: #8b4513; --text-dark: #333; --text-light: #fff; --bg-light: #f4f4f4; }
+        body { background-color: var(--bg-light); }
+
+        /* HEADER - Logo Left, Nav Right */
+        header {
+            position: fixed; top: 0; width: 100%;
+            background-color: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            z-index: 1000;
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 10px 5%;
+        }
+        .logo-container { display: flex; align-items: center; gap: 15px; }
+        .logo-container img { height: 60px; width: 60px; border-radius: 50%; object-fit: cover; border: 2px solid var(--primary-green); }
+        .logo-text { font-size: 1.2rem; font-weight: bold; color: var(--primary-green); text-transform: uppercase; }
+        nav ul { display: flex; list-style: none; gap: 20px; }
+        nav ul li a { text-decoration: none; color: var(--text-dark); font-weight: 600; font-size: 0.95rem; transition: color 0.3s; }
+        nav ul li a:hover, nav ul li a.active { color: var(--primary-green); border-bottom: 2px solid var(--primary-green); }
+
+        /* INNER PAGE STYLES */
+        .page-content { min-height: 100vh; padding-top: 120px; padding-bottom: 50px; padding-left: 20px; padding-right: 20px; }
+        .content-container { max-width: 1200px; margin: 0 auto; padding: 40px; background: var(--text-light); border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        .section-title { color: var(--primary-green); font-size: 2.5rem; margin-bottom: 20px; border-bottom: 3px solid var(--primary-brown); display: inline-block; padding-bottom: 10px; }
+        .content-container p { line-height: 1.8; color: var(--text-dark); margin-bottom: 15px; font-size: 1.1rem; }
+
+        @media (max-width: 900px) {
+            header { flex-direction: column; padding: 10px; }
+            nav ul { flex-wrap: wrap; justify-content: center; margin-top: 10px; }
+            .page-content { padding-top: 160px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="Logo.png" alt="Juba County Logo">
+            <div class="logo-text">Juba County</div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="departments.html">Departments</a></li>
+                <li><a href="news.html">News & Announcements</a></li>
+                <li><a href="services.html">Services & Portal</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="page-content">
+        <div class="content-container">
+            <h2 class="section-title">About Juba County</h2>
+            <p>Welcome to the official website of Juba County. Juba is the capital and largest city of South Sudan. It is also the capital of Central Equatoria State and serves as the administrative headquarters for Juba County.</p>
+            <p>Our mission is to provide efficient, transparent, and accountable governance to the people of Juba County, fostering sustainable development, peace, and unity among all communities.</p>
+            
+            <h3 style="margin-top: 20px; margin-bottom: 10px; color: var(--primary-brown);">Our Vision</h3>
+            <p>A prosperous, peaceful, and united Juba County with a high standard of living for all its citizens.</p>
+            
+            <h3 style="margin-top: 20px; margin-bottom: 10px; color: var(--primary-brown);">Office of the Commissioner</h3>
+            <p>The Commissioner is the chief executive officer of the county, responsible for the implementation of state and national policies at the local level. The office oversees all administrative, developmental, and security matters within the county boundaries.</p>
+        </div>
+    </div>
+
+</body>
+</html>
